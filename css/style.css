@@ -1,0 +1,35 @@
+html,
+body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+body, button, input {
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #000000;
+  font-weight: normal;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+img {
+  max-width: 100%;
+}
+
+::-moz-selection {
+color: #FFFFFF;
+background-color: #81B3D2;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #859D8F;
+  box-shadow-left: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
+}
