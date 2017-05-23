@@ -8,16 +8,16 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <div class="slaider-radio">
-      <input class="rbtn btn1" id="btn-slide1" type="radio" name="btn-slide1" checked></button>
-      <input class="rbtn btn2" id="btn-slide2" type="radio" name="btn-slide2"></button>
-      <input class="rbtn btn3" id="btn-slide3" type="radio" name="btn-slide3"></button>
-    </div>
 
-    <div class="container">
+      <input id="btn-slide1" type="radio" name="toggle" checked></button>
+      <input id="btn-slide2" type="radio" name="toggle"></button>
+      <input id="btn-slide3" type="radio" name="toggle"></button>
+  
+
+    <div class="site-wrapper">
       <header class="header-main">
         <div class="logo">
-          <img src="..//img/logo.png" alt="Магазин Глейси">
+          <img src="img/logo.png" alt="Магазин Глейси">
         </div>
         <nav class="main-menu">
           <ul>
@@ -39,17 +39,17 @@
 
       <main>
         <div class="slider">
-          <div class="slide1">
-            <h2>Крем-брюле и пломбир<br> с малиновым джемом</h2>
-            <a class="btn" href="#">Давайте оба!</a>
+          <div class="slide" id="slide1">
+            <div class="slide-title">Крем-брюле и пломбир с малиновым джемом</div>
+            <a class="slide-btn" href="#">Давайте оба!</a>
           </div>
-          <div class="slide2">
-            <h2>Шоколадный пломбир<br>и лимонный сорбет</h2>
-            <a class="btn" href="#">Давайте оба!</a>
+          <div class="slide" id="slide2">
+            <div class="slide-title">Шоколадный пломбир и лимонный сорбет</div>
+            <a class="slide-btn" href="#">Давайте оба!</a>
           </div>
-          <div class="slide3">
-            <h2>Пломбир с помадкой<br>и клубничный щербет</h2>
-            <a class="btn" href="#">Давайте оба!</a>
+          <div class="slide" id="slide3">
+            <div class="slide-title">Пломбир с помадкой<br>и клубничный щербет</div>
+            <a class="slide-btn" href="#">Давайте оба!</a>
           </div>
           <div class="slider-controls">
             <label for="btn-slide1"></label>
@@ -76,24 +76,28 @@
             <a href=""><img src="" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой"></a>
             <span>310<img src="..img/rubl.png" alt="Цена"><small>/кг</small></span>
             <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+            <a class="btn" href="#">Быстрый просмотр</a>
           </li>
           <li>
             <span class="hit"></span>
             <a href=""><img src="" alt="Сливочно-кофейное с кусочками шоколада"></a>
             <span>380<img src="..img/rubl.png" alt="Цена"><small>/кг</small></span>
             <a href="#">Сливочно-кофейное с кусочками шоколада</a>
+            <a class="btn" href="#">Быстрый просмотр</a>
           </li>
           <li>
             <span class="hit"></span>
             <a href=""><img src="" alt="Сливочно-клубничное с присыпкой из белого шоколада"></a>
             <span>355<img src="..img/rubl.png" alt="Цена"><small>/кг</small></span>
             <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+            <a class="btn" href="#">Быстрый просмотр</a>
           </li>
           <li>
             <span class="hit"></span>
             <a href=""><img src="" alt="Сливочное крем-брюле с карамельной подливкой"></a>
             <span>415<img src="..img/rubl.png" alt="Цена"><small>/кг</small></span>
             <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+            <a class="btn" href="#">Быстрый просмотр</a>
           </li>
         </ul>
 
