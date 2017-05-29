@@ -57,7 +57,7 @@ body > input[type="radio"] {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding-top: 13px;
+  padding-top: 6px;
   position: relative;
 }
 
@@ -71,13 +71,17 @@ body > input[type="radio"] {
   display: flex;
   flex-wrap: wrap;
   width: 674px;
-  margin-left: 176px;
+  margin-left: 166px;
   padding-left: 0;
 }
 
 .main-menu li {
   list-style: none;
-  margin-right: 27px;
+  margin-right: 4px;
+  padding: 7px 12px;
+  border: none;
+  border-radius: 50px;
+  background-color: transparent;
 }
 
 .main-menu a,
@@ -87,10 +91,18 @@ body > input[type="radio"] {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
+.main-menu .current-page {
+  background-color: #D07058;
+}
+
+.current-page a {
+  border-bottom: none;
+}
+
 .local-menu {
   display: flex;
   padding-left: 0;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 0;
   color: #ffffff;
   font-weight: normal;
@@ -165,7 +177,7 @@ body > input[type="radio"] {
 }
 
 .working {
-  margin-top: 10px;
+  margin-top: 2px;
   margin-bottom: 5px;
   font-size: 14px;
   line-height: 16px;
@@ -727,19 +739,22 @@ main h1 {
 .choice {
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
 
 .choice fieldset {
+  margin-left: 0;
   color: #ffffff;
   font-weight: 400;
   border: none;
 }
 
 .choice legend {
-  margin-left: 15px;
+  margin-top: 2px;
+  margin-left: 6px;
   font-size: 14px;
   line-height: 16px;
-
 }
 
 .choice label {
@@ -754,9 +769,12 @@ main h1 {
 
 .sort select {
   width: 194px;
-  height: 32px;
+  height: 36px;
+  margin-top: 2px;
+  margin-left: -10px;
   padding-left: 12px;
-  padding-top: 0;
+  padding-top: 2px;
+  padding-bottom: 4px;
   color: #ffffff;
   font-family: inherit;
   font-size: 16px;
@@ -786,6 +804,208 @@ main h1 {
   background-position: 90% 16px;
 }
 
+.range {
+  width: 212px;
+  font-size: 0;
+  cursor: pointer;
+}
+
+.range legend {
+  padding-left: 10px;
+}
+
+.bar {
+  margin-top: 7px;
+  width: 188px;
+  height: 4px;
+  background-color: #ffffff;
+  border: 16px solid #A9BAB0;
+  border-radius: 50px;
+  position: relative;
+}
+
+.range span {
+  position: absolute;
+  top: -8px;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.range-left {
+  left: 20px;
+}
+
+.range-right {
+  left: 118px;
+}
+
+.bar::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 4px;
+  background-color: #D1DAD3;
+}
+
+.bar::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 137px;
+  width: 51px;
+  height: 4px;
+  background-color: #D1DAD3;
+}
+
+.fat-value {
+  display: flex;
+  margin-top: 3px;
+  border-radius: 50px;
+  background-color: #A9BAB0;
+}
+
+.fat legend {
+  padding-left: 13px;
+}
+
+.fat-value label {
+  padding-top: 9px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  position: relative;
+}
+
+.fat-value label:last-child {
+  padding-right: 12px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 18px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 22px;
+  width: 11px;
+  height: 11px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+input[type="radio"] + label:hover::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 17px;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked + label:hover::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 22px;
+  width: 12px;
+  height: 12px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.filler-value {
+  display: flex;
+  margin-top: 3px;
+  margin-left: -10px;
+  border-radius: 50px;
+  background-color: #A9BAB0;
+}
+
+.filler-value label {
+  padding-top: 7px;
+  padding-bottom: 10px;
+  padding-left: 52px;
+  position: relative;
+}
+
+.filler-value label:last-child {
+  padding-right: 12px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 18px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+}
+
+input[type="checkbox"]:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 23px;
+  width: 8px;
+  height: 5px;
+  background-color: transparent;
+  border-bottom: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  transform: rotate(-45deg);
+}
+
+input[type="checkbox"] + label:hover::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 17px;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ffffff;
+}
+
+.btn-form {
+  align-self: center;
+  margin-top: 12px;
+  height: 36px;
+  padding-left: 28px;
+  padding-right: 28px;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  background-color: #A6B7AE;
+  border: 2px solid #ffffff;
+  border-radius: 50px;
+}
 
 
 .content {

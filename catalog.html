@@ -15,7 +15,7 @@
         </div>
         <nav>
           <ul class="main-menu">
-            <li><a href="catalog.html">Каталог</a></li>
+            <li class="current-page"><a href="catalog.html">Каталог</a></li>
             <li><a href="#">Доставка и оплата</a></li>
             <li><a href="#">О Компании</a></li>
           </ul>
@@ -53,32 +53,38 @@
           </fieldset>
           <fieldset class="range">
             <legend>Цена: 100 руб. – 500 руб.</legend>
-            <span class="range-left"></span>
-            <span class="range-right"></span>
+            <div class="bar">
+              <span class="range-left"></span>
+              <span class="range-right"></span>
+            </div>
           </fieldset>
           <fieldset class="fat">
             <legend>Жирность:</legend>
-            <input id="fat1" type="radio" name="fat">
-            <label for="fat1">0%</label>
-            <input id="fat2" type="radio" name="fat" checked>
-            <label for="fat2">до 10%</label>
-            <input id="fat3" type="radio" name="fat">
-            <label for="fat3">до 30%</label>
-            <input id="fat4" type="radio" name="fat">
-            <label for="fat4">выше 30%</label>
+            <div class="fat-value">
+              <input id="fat1" type="radio" name="fat">
+              <label for="fat1">0%</label>
+              <input id="fat2" type="radio" name="fat" checked>
+              <label for="fat2">до 10%</label>
+              <input id="fat3" type="radio" name="fat">
+              <label for="fat3">до 30%</label>
+              <input id="fat4" type="radio" name="fat">
+              <label for="fat4">выше 30%</label>
+            </div>
           </fieldset>
           <fieldset class="filler">
             <legend>Наполнители:</legend>
-            <input id="filler1" type="checkbox" name="filler1" checked>
-            <label for="filler1">шоколадные</label>
-            <input id="filler2" type="checkbox" name="filler2" checked>
-            <label for="filler2">сахарные присыпки</label>
-            <input id="filler3" type="checkbox" name="filler">
-            <label for="filler3">фрукты</label>
-            <input id="filler4" type="checkbox" name="filler4">
-            <label for="filler4">сиропы</label>
-            <input id="filler5" type="checkbox" name="filler5">
-            <label for="filler5">джемы</label>
+            <div class="filler-value">
+              <input id="filler1" type="checkbox" name="filler1" checked>
+              <label for="filler1">шоколадные</label>
+              <input id="filler2" type="checkbox" name="filler2" checked>
+              <label for="filler2">сахарные присыпки</label>
+              <input id="filler3" type="checkbox" name="filler">
+              <label for="filler3">фрукты</label>
+              <input id="filler4" type="checkbox" name="filler4">
+              <label for="filler4">сиропы</label>
+              <input id="filler5" type="checkbox" name="filler5">
+              <label for="filler5">джемы</label>
+            </div>
           </fieldset>
           <button class="btn-form" type="submit">Применить</button>
         </form>
