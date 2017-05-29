@@ -23,8 +23,15 @@
         <div class="controls">
           <button class="btn-control search" type="button"></button>
           <button class="btn-control entry" type="button">Вход</button>
-          <button class="btn-control backet" type="button">Пусто</button>
+          <button class="btn-control backet-full" type="button">2 товара</button>
         </div>
+        <nav class="breadcrumbs">
+          <ul class="local-menu">
+            <li><a href="index.html">Главная</a><span>&#187</span></li>
+            <li><a href="#">Магазин</a><span>&#187</span></li>
+            <li class="breadcrumbs-current">Сливочное</li>
+          </ul>
+        </nav>
         <div class="info">
           <span class="working">С 10 до 20, ежедневно</span>
           <span class="telephon">8 812 450-25-25</span>
@@ -32,43 +39,36 @@
       </header>
 
       <main>
-        <nav class="breadcrumbs">
-          <ul>
-            <li><a href="index.html">Главная</a><span>&#187</span></li>
-            <li><a href="#">Магазин</a><span>&#187</span></li>
-            <li><a class="breadcrumbs-current">Сливочное</a></li>
-          </ul>
-        </nav>
         <h1>Сливочное мороженое</h1>
 
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <div class="sort">
-            <label for="sort">Сортировка:</label>
-            <select name="sort" id="sort">
+        <form class="choice" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="sort">
+            <legend>Сортировка:</legend>
+            <select name="parametrs">
               <option value="1" checked>по популярности</option>
               <option value="2">сначала недорогие</option>
               <option value="3">сначала дорогие</option>
               <option value="4">по жирности</option>
             </select>
-          </div>
-          <div class="range">
-            <label>Цена: 100 руб. – 500 руб.</label>
+          </fieldset>
+          <fieldset class="range">
+            <legend>Цена: 100 руб. – 500 руб.</legend>
             <span class="range-left"></span>
             <span class="range-right"></span>
-          </div>
-          <div class="fat">
-            <label>Жирность:</label>
-            <input id="fat1" type="radio" name="fat1">
+          </fieldset>
+          <fieldset class="fat">
+            <legend>Жирность:</legend>
+            <input id="fat1" type="radio" name="fat">
             <label for="fat1">0%</label>
-            <input id="fat2" type="radio" name="fat2" checked>
+            <input id="fat2" type="radio" name="fat" checked>
             <label for="fat2">до 10%</label>
-            <input id="fat3" type="radio" name="fat3">
+            <input id="fat3" type="radio" name="fat">
             <label for="fat3">до 30%</label>
-            <input id="fat4" type="radio" name="fat4">
+            <input id="fat4" type="radio" name="fat">
             <label for="fat4">выше 30%</label>
-          </div>
-          <div class="filler">
-            <label>Наполнители:</label>
+          </fieldset>
+          <fieldset class="filler">
+            <legend>Наполнители:</legend>
             <input id="filler1" type="checkbox" name="filler1" checked>
             <label for="filler1">шоколадные</label>
             <input id="filler2" type="checkbox" name="filler2" checked>
@@ -79,7 +79,7 @@
             <label for="filler4">сиропы</label>
             <input id="filler5" type="checkbox" name="filler5">
             <label for="filler5">джемы</label>
-          </div>
+          </fieldset>
           <button class="btn-form" type="submit">Применить</button>
         </form>
 

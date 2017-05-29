@@ -10,22 +10,11 @@ body, button, input {
   font-family: "Roboto", "Arial", sans-serif;
   color: #000000;
   font-weight: normal;
-
-}
-
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
+  background-color: #849d8f;
 }
 
 img {
   max-width: 100%;
-}
-
-::-moz-selection {
-color: #FFFFFF;
-background-color: #81B3D2;
 }
 
 body > input[type="radio"] {
@@ -35,9 +24,6 @@ body > input[type="radio"] {
 .site-wrapper {
   width: 1200px;
   margin: 0 auto;
-  background-color: #859D8F;
-  background-image: url("..//img/slide1.png");
-  background-repeat: no-repeat;
   background-position: top center;
   box-shadow-left: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
   position: relative;
@@ -64,12 +50,11 @@ body > input[type="radio"] {
   width: 1146px;
   margin: 0 auto;
   padding: 0 27px;
-  background-color: #859D8F;
 }
 
 .header-main {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   padding-top: 13px;
@@ -84,8 +69,9 @@ body > input[type="radio"] {
 
 .main-menu {
   display: flex;
+  flex-wrap: wrap;
   width: 674px;
-  margin-left: 154px;
+  margin-left: 176px;
   padding-left: 0;
 }
 
@@ -94,8 +80,32 @@ body > input[type="radio"] {
   margin-right: 27px;
 }
 
-.main-menu a {
+.main-menu a,
+.local-menu a {
   color: #ffffff;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.local-menu {
+  display: flex;
+  padding-left: 0;
+  margin-top: 30px;
+  margin-bottom: 0;
+  color: #ffffff;
+  font-weight: normal;
+}
+
+.local-menu li {
+  list-style: none;
+  margin-right: 6px;
+}
+
+.local-menu a {
+  margin-right: 6px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
 }
 
 .controls {
@@ -116,7 +126,7 @@ body > input[type="radio"] {
 .search {
   width: 32px;
   border-radius: 50%;
-  background: #A0B4A9 url("..//img/glass.png") no-repeat;
+  background: rgba(255,255,255,.2) url("..//img/glass.png") no-repeat;
   background-position: center;
 }
 
@@ -124,7 +134,7 @@ body > input[type="radio"] {
   width: 93px;
   text-align: right;
   padding-right: 17px;
-  background: #A0B4A9 url("..//img/enter.png") no-repeat;
+  background: rgba(255,255,255,.2) url("..//img/enter.png") no-repeat;
   background-position: 18px center;
 }
 
@@ -132,7 +142,17 @@ body > input[type="radio"] {
   width: 117px;
   margin-right: 0;
   padding-left: 18px;
-  background: #A0B4A9 url("..//img/backet.png") no-repeat;
+  background: rgba(255,255,255,.2) url("..//img/backet.png") no-repeat;
+  background-position: 16px center;
+}
+
+.backet-full {
+  width: 117px;
+  text-align: right;
+  margin-right: 0;
+  padding-right: 17px;
+  color: #000000;
+  background: #F7F6F3 url("..//img/backet-full.png") no-repeat;
   background-position: 16px center;
 }
 
@@ -223,8 +243,7 @@ body > input[type="radio"] {
 }
 
 #btn-slide1:checked ~ .site-wrapper {
-  background-color: #849d8f;
-  background-image: url("..//img/slide1.png");
+  background: #849d8f url("..//img/slide1.png") no-repeat;
 }
 
 #btn-slide2:checked ~ .site-wrapper {
@@ -696,6 +715,78 @@ body > input[type="radio"] {
 }
 
 /* Внутренняя страница - каталог */
+
+main h1 {
+  margin-top: 0;
+  color: #ffffff;
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: bold;
+}
+
+.choice {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.choice fieldset {
+  color: #ffffff;
+  font-weight: 400;
+  border: none;
+}
+
+.choice legend {
+  margin-left: 15px;
+  font-size: 14px;
+  line-height: 16px;
+
+}
+
+.choice label {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.sort {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.sort select {
+  width: 194px;
+  height: 32px;
+  padding-left: 12px;
+  padding-top: 0;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  text-overflow: "";
+  border: none;
+  border-radius: 50px;
+  background: rgba(255,255,255,.2)  url("../img/arrow-w.png") no-repeat;
+  background-position: 90% 16px;
+  -webkit-appearance: none;
+   -moz-appearance: none;
+        appearance: none;
+  cursor: pointer;
+}
+
+.sort select::-ms-expand
+{
+  color: transparent;
+  border: none;
+  background-color: transparent;
+}
+
+.sort select:hover {
+  color: #000000;
+  background: #ffffff  url("../img/arrow-b.png") no-repeat;
+  background-position: 90% 16px;
+}
+
+
 
 .content {
   display: flex;
