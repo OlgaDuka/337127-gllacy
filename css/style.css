@@ -349,6 +349,7 @@ body > input[type="radio"] {
 .hit-container {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 40px;
   padding: 0;
 }
 
@@ -392,6 +393,7 @@ body > input[type="radio"] {
 }
 
 .hit-link {
+  padding: 0 5px 0;
   color: #ffffff;
   font-size: 16px;
   line-height: 22px;
@@ -403,7 +405,6 @@ body > input[type="radio"] {
 .technology {
   width: 1106px;
   height-min: 266px;
-  margin-top: 40px;
   padding: 23px 20px 0 20px;
   color: #333333;
   font-weight: normal;
@@ -740,6 +741,7 @@ main h1 {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
+  margin-bottom: 25px;
   padding: 0;
 }
 
@@ -791,8 +793,7 @@ main h1 {
   cursor: pointer;
 }
 
-.sort select::-ms-expand
-{
+.sort select::-ms-expand {
   color: transparent;
   border: none;
   background-color: transparent;
@@ -883,7 +884,7 @@ main h1 {
 }
 
 .fat-value label:last-child {
-  padding-right: 12px;
+  padding-right: 14px;
 }
 
 input[type="radio"] {
@@ -899,6 +900,7 @@ input[type="radio"] + label::before {
   height: 18px;
   border: 1px solid #ffffff;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 input[type="radio"]:checked + label::after {
@@ -921,6 +923,7 @@ input[type="radio"] + label:hover::before {
   height: 18px;
   border: 2px solid #ffffff;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 input[type="radio"]:checked + label:hover::after {
@@ -950,7 +953,7 @@ input[type="radio"]:checked + label:hover::after {
 }
 
 .filler-value label:last-child {
-  padding-right: 12px;
+  padding-right: 17px;
 }
 
 input[type="checkbox"] {
@@ -966,6 +969,7 @@ input[type="checkbox"] + label::before {
   height: 18px;
   border: 1px solid #ffffff;
   border-radius: 3px;
+  cursor: pointer;
 }
 
 input[type="checkbox"]:checked + label::after {
@@ -979,6 +983,7 @@ input[type="checkbox"]:checked + label::after {
   border-bottom: 2px solid #ffffff;
   border-left: 2px solid #ffffff;
   transform: rotate(-45deg);
+  cursor: pointer;
 }
 
 input[type="checkbox"] + label:hover::before {
@@ -989,14 +994,15 @@ input[type="checkbox"] + label:hover::before {
   width: 18px;
   height: 18px;
   border: 2px solid #ffffff;
+  cursor: pointer;
 }
 
 .btn-form {
   align-self: center;
   margin-top: 12px;
   height: 36px;
-  padding-left: 28px;
-  padding-right: 28px;
+  padding-left: 30px;
+  padding-right: 30px;
   color: #ffffff;
   font-family: inherit;
   font-size: 16px;
@@ -1005,12 +1011,74 @@ input[type="checkbox"] + label:hover::before {
   background-color: #A6B7AE;
   border: 2px solid #ffffff;
   border-radius: 50px;
+  cursor: pointer;
 }
-
 
 .content {
   display: flex;
   justify-content: space-between;
+  align-content: space-between;
   flex-wrap: wrap;
   padding: 0;
+}
+
+.content .hit-item {
+  margin-bottom: 42px;
+}
+
+.paginator {
+  margin-top: 35px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.paginator a {
+  margin-left: 21px;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.page-prev,
+.page-next {
+  margin-top: 4px;
+  width: 7px;
+  height: 7px;
+  background-color: transparent;
+  border-left: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+
+.page-next {
+  transform: rotate(-45deg);
+}
+
+.disabled {
+  opacity: 0.2;
+}
+
+.paginator .page-current {
+  margin-left: 10px;
+  width: 27px;
+  height: 24px;
+  padding-top: 4px;
+  text-align: center;
+  color: #000000;
+  border: none;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.page-current + a {
+  margin-left: 10px;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
