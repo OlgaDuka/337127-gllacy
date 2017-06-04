@@ -1,0 +1,125 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-arrow-b {
+    width: 12px;
+    height: 12px;
+    background-position: -5px -5px;
+}
+
+.sprite-arrow-w {
+    width: 12px;
+    height: 12px;
+    background-position: -5px -27px;
+}
+
+.sprite-backet {
+    width: 21px;
+    height: 20px;
+    background-position: -5px -49px;
+}
+
+.sprite-backet-full {
+    width: 21px;
+    height: 20px;
+    background-position: -5px -79px;
+}
+
+.sprite-cow {
+    width: 48px;
+    height: 49px;
+    background-position: -5px -109px;
+}
+
+.sprite-degree {
+    width: 48px;
+    height: 49px;
+    background-position: -5px -168px;
+}
+
+.sprite-enter {
+    width: 21px;
+    height: 19px;
+    background-position: -5px -227px;
+}
+
+.sprite-enter-b {
+    width: 21px;
+    height: 19px;
+    background-position: -5px -256px;
+}
+
+.sprite-fb {
+    width: 32px;
+    height: 32px;
+    background-position: -5px -285px;
+}
+
+.sprite-glass {
+    width: 17px;
+    height: 17px;
+    background-position: -5px -327px;
+}
+
+.sprite-glass-b {
+    width: 17px;
+    height: 17px;
+    background-position: -5px -354px;
+}
+
+.sprite-hart {
+    width: 15px;
+    height: 13px;
+    background-position: -5px -381px;
+}
+
+.sprite-hit {
+    width: 61px;
+    height: 61px;
+    background-position: -5px -404px;
+}
+
+.sprite-html-logo {
+    width: 108px;
+    height: 38px;
+    background-position: -5px -475px;
+}
+
+.sprite-icecream {
+    width: 49px;
+    height: 49px;
+    background-position: -5px -523px;
+}
+
+.sprite-insta {
+    width: 32px;
+    height: 32px;
+    background-position: -5px -582px;
+}
+
+.sprite-rubl {
+    width: 39px;
+    height: 34px;
+    background-position: -5px -624px;
+}
+
+.sprite-sheet {
+    width: 49px;
+    height: 49px;
+    background-position: -5px -668px;
+}
+
+.sprite-tw {
+    width: 32px;
+    height: 32px;
+    background-position: -5px -727px;
+}
+
+.sprite-vk {
+    width: 32px;
+    height: 32px;
+    background-position: -5px -769px;
+}
