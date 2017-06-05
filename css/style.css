@@ -213,10 +213,35 @@ body > input[type="radio"] {
   display: flex;
   margin-left: auto;
   height: 32px;
-  margin-left: 30px;
+}
+
+.search-wrap,
+.entry-wrap,
+.backet-wrap {
+  height: 40px;
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.controls form {
+  display: none;
+  border: none;
+  border-radius: 5px;
+  background-color: #F8F7F4;
+  position: absolute;
+  top: 36px;
+  right: 0;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, .4);
+}
+
+.controls label {
+  font-size: 0;
 }
 
 .control {
+  height: 32px;
   margin-right: 10px;
   color: #ffffff;
   font-size: 14px;
@@ -228,16 +253,71 @@ body > input[type="radio"] {
   position: relative;
 }
 
-.search {
-  width: 32px;
-  border-radius: 50%;
-}
-
 .control::before {
   content: "";
   background-image: url("..//img/sprite.png");
   background-repeat: no-repeat;
   position: absolute;
+}
+
+.search-form {
+  width: 340px;
+  height: 84px;
+  z-index: 22;
+}
+
+.search-form input {
+  width: 310px;
+  height: 44px;
+  margin: 20px 15px;
+  padding-left: 14px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  box-sizing: border-box;
+  border: 1px solid #D3D3D2;
+  border-radius: 5px;
+}
+
+.search-form input:hover {
+  border: 2px solid #C7C6C5;
+}
+
+.search-form input:focus {
+  border: 2px solid #8FBDEC;
+}
+
+
+.entry-form {
+  width: 277px;
+  height: 214px;
+}
+
+.entry-form input {
+  width: 240px;
+  height: 44px;
+  margin: 20px 15px;
+  padding-left: 14px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  box-sizing: border-box;
+  border: 1px solid #D3D3D2;
+  border-radius: 5px;
+}
+
+.entry-form input:hover {
+  border: 2px solid #C7C6C5;
+}
+
+.entry-form input:focus {
+  border: 2px solid #8FBDEC;
+}
+
+
+.search {
+  width: 32px;
+  border-radius: 50%;
 }
 
 .search::before {
@@ -252,6 +332,10 @@ body > input[type="radio"] {
 
 .search:hover {
   background-color: #ffffff;
+}
+
+.search-wrap:hover > .search-form {
+  display: block;
 }
 
 .search:hover::before {
@@ -276,6 +360,10 @@ body > input[type="radio"] {
 .entry:hover {
   color: #000000;
   background-color: #ffffff;
+}
+
+.entry-wrap:hover > .entry-form {
+  display: block;
 }
 
 .entry:hover::before {
