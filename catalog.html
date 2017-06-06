@@ -11,7 +11,7 @@
     <div class="content-wrapper page-catalog">
       <header class="header-main">
         <div class="logo">
-          <img src="img/logo.png" alt="Магазин Глейси">
+          <a href="index.html"><img src="img/logo.png" alt="Магазин Глейси"></a>
         </div>
         <nav>
           <ul class="main-menu">
@@ -31,9 +31,46 @@
           </ul>
         </nav>
         <div class="controls">
-          <a class="control search" href="#"></a>
-          <a class="control entry" href="#">Вход</a>
+          <div class="search-wrap">
+            <a class="control search" href="#"></a>
+            <form  class="search-form" action="https://echo.htmlacademy.ru" method="post">
+              <input type="search" name="search" id="search" placeholder="Что ищем?">
+              <label for="search">Что ищем?</label>
+            </form>
+          </div>
+          <div class="entry-wrap">
+            <a class="control entry" href="#">Вход</a>
+            <form  class="entry-form" action="https://echo.htmlacademy.ru" method="post">
+              <input type="email" name="email" id="email" placeholder="Электронная почта">
+              <label for="email">Электронная почта</label>
+              <input type="password" name="password" id="password" placeholder="Пароль">
+              <label for="password">Пароль</label>
+              <a href="#">Забыли пароль?</a>
+              <a href="#">Новая регистрация</a>
+              <buttom  class="entry-btn style-btn" type="submit">Войти</button>
+            </form>
+          </div>
+          <div class="backet-wrap">
           <a class="control backet-full" href="#">2 товара</a>
+            <form  class="order" action="https://echo.htmlacademy.ru" method="post">
+              <table class="table-order">
+                <tr class="tr-order">
+                  <td class="td-img"><img src="img/icecream-1.jpg" alt="Пломбир с апельсиновым джемом" width="33px" height="33px"></td>
+                  <td class="td-name">Пломбир с апельсиновым джемом</td>
+                  <td class="td-price">1,5 кг х <span>200 руб.</span></td>
+                  <td class="td-cost">300 руб.</td>
+                </tr>
+                <tr class="tr-order">
+                  <td class="td-img"><img src="img/icecream-2.jpg" alt="Клубничный пломбир с присыпкой из белого шоколада" width="33px" height="33px"></td>
+                  <td class="td-name">Клубничный пломбир с присыпкой из белого шоколада</td>
+                  <td class="td-price">1,5 кг х <span>300 руб.</span></td>
+                  <td class="td-cost">450 руб.</td>
+                </tr>
+              </table>
+              <span class="summa">Итого: 750 руб.</span>
+              <buttom  class="order-btn style-btn" type="submit">Оформить заказ</button>
+            </form>
+          </div>
         </div>
         <nav class="breadcrumbs">
           <ul class="local-menu">
