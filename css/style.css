@@ -16,6 +16,30 @@ img {
   max-width: 100%;
 }
 
+.style-btn {
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  background-color: #f00;
+  background-image: linear-gradient(to bottom, #ff3333 0%, #ff6633 100%);
+  border-radius: 50px;
+  box-shadow: 0 2px 2px rgba(153, 0, 0, 0.64);
+  cursor: pointer;
+}
+
+.style-btn:hover {
+  background-image: linear-gradient(to bottom, #f58669, #ec6f5e);
+}
+
+.style-btn:active
+{
+  color: #FCEEEC;
+  background-image: linear-gradient(to bottom, #D84732 0%, #E1613E 100%);
+  box-shadow: inset 0 2px 2px 0 #993300;
+}
+
+
 body > input[type="radio"] {
   display: none;
 }
@@ -356,7 +380,7 @@ input[type="password"] + label {
   border-color: #F9CDC4;
 }
 
-.entry-form .entry-btn {
+.entry-form .style-btn {
   position: absolute;
   bottom: 20px;
   left: 20px;
@@ -364,8 +388,6 @@ input[type="password"] + label {
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
-  text-shadow: 0 1px 2px rgba(153, 0, 0, 1);
-  cursor: pointer;
 }
 
 .entry-form input {
@@ -467,7 +489,9 @@ input[type="password"] + label {
   display: flex;
 }
 
-.order .order-btn {
+
+
+.order .style-btn {
   margin-top: auto;
   margin-bottom: 10px;
   align-self: flex-end;
@@ -475,8 +499,6 @@ input[type="password"] + label {
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
-  text-shadow: 0 1px 2px rgba(153, 0, 0, 1);
-  cursor: pointer;
 }
 
 .order .summa {
@@ -590,24 +612,12 @@ input[type="password"] + label {
   font-weight: bold;
 }
 
-.slide-btn {
+.slide .style-btn {
   padding: 12px 45px;
   font-weight: bold;
   font-size: 31px;
   line-height: 42px;
   text-shadow: 0 2px 5px rgba(153, 51, 0, 0.76);
-}
-
-.style-btn {
-  color: #ffffff;
-  text-decoration: none;
-  border: none;
-  background: #f26843;
-  background:    -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
-  background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
-  background:         linear-gradient(to bottom, #ff3333 0%, #ff6633 100%);
-  border-radius: 50px;
-  box-shadow: 0 2px 2px rgba(153, 0, 0, 0.64);
 }
 
 .slider-controls {
@@ -701,22 +711,21 @@ input[type="password"] + label {
 
 }
 
-.banner1-btn,
-.banner2-btn {
+.raspberry .style-btn,
+.chocolate .style-btn {
   width: 165px;
   height: 44px;
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
   align-self: flex-end;
-  cursor: pointer;
 }
 
-.banner2-btn {
+.chocolate .style-btn {
   width: 190px;
 }
 
-.hit-btn {
+.hit-item .style-btn {
   display: none;
   width: 200px;
   height: 34px;
@@ -726,7 +735,6 @@ input[type="password"] + label {
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
-  text-align: center;
 }
 
 .hit-container {
@@ -964,14 +972,13 @@ input[type="password"] + label {
   border-radius: 5px;
 }
 
-.form-btn {
+.subscribe-form .style-btn {
   width: 128px;
   height: 44px;
   margin-top: 10px;
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
-  text-align: center;
 }
 
 .feedback {
@@ -1026,7 +1033,7 @@ input[type="password"] + label {
   margin-bottom: 20px;
 }
 
-.contact-btn {
+.contact .style-btn {
   display: block;
   width: 250px;
   height: 34px;
@@ -1034,7 +1041,6 @@ input[type="password"] + label {
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
-  text-align: center;
   align-items: center;
 }
 
