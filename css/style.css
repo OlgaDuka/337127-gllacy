@@ -39,6 +39,48 @@ img {
   box-shadow: inset 0 2px 2px 0 #993300;
 }
 
+.search-form input,
+.entry-form input,
+.subscribe-form input {
+  height: 43px;
+  padding-left: 13px;
+  color: #999999;
+  line-height: 24px;
+  font-weight: normal;
+  box-sizing: border-box;
+  border: 1px solid #999999;
+  border-radius: 5px;
+}
+
+.search-form input:hover,
+.entry-form input:hover,
+.subscribe-form input:hover {
+  border: 2px solid #C7C6C5;
+}
+
+.search-form input:focus,
+.entry-form input:focus,
+.subscribe-form input:focus {
+  border: 2px solid #8FBDEC;
+}
+
+.search-form label,
+.entry-form label,
+.subscribe-form label {
+  position: absolute;
+  top: 3px;
+  left: 30px;
+  font-size: 0;
+  line-height: 13px;
+  font-weight: normal;
+  color: #8FBDEC;
+}
+
+.search-form input:focus + label,
+.entry-form input:focus + label,
+.subscribe-form input:focus + label {
+  font-size: 11px;
+}
 
 body > input[type="radio"] {
   display: none;
@@ -63,10 +105,91 @@ body > input[type="radio"] {
 
 .site-wrapper::before {
   background-image: url("..//img/slide2.png");
+  background-repeat: no-repeat;
 }
 
 .site-wrapper::after {
   background-image: url("..//img/slide3.png");
+  background-repeat: no-repeat;
+}
+
+.slider {
+  position: relative;
+  padding-top: 273px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.slide {
+  display: none;
+}
+
+.slide-title {
+  width: 700px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: bold;
+}
+
+.slide .style-btn {
+  padding: 12px 45px;
+  font-weight: bold;
+  font-size: 31px;
+  line-height: 42px;
+  text-shadow: 0 2px 5px rgba(153, 51, 0, 0.76);
+}
+
+.slider-controls {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 446px;
+  left: 0;
+  width: 80px;
+  height: 20px;
+  z-index: 20;
+}
+
+.slider-controls label {
+  width: 17px;
+  height: 17px;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-controls label:hover {
+  background-color: rgba(255,255,255,0.5);
+}
+
+#btn-slide1:checked ~ .site-wrapper #slide1,
+#btn-slide2:checked ~ .site-wrapper #slide2,
+#btn-slide3:checked ~ .site-wrapper #slide3 {
+  display: block;
+}
+
+#btn-slide1:checked ~ .site-wrapper {
+  background: #849d8f url("..//img/slide1.png") no-repeat;
+  background-position: top center;
+}
+
+#btn-slide2:checked ~ .site-wrapper {
+  background: #8996a6 url("..//img/slide2.png") no-repeat;
+  background-position: top center;
+}
+
+#btn-slide3:checked ~ .site-wrapper {
+  background: #9d8b84 url("..//img/slide3.png") no-repeat;
+  background-position: top center;
+}
+
+#btn-slide1:checked ~ .site-wrapper label[for="btn-slide1"],
+#btn-slide2:checked ~ .site-wrapper label[for="btn-slide2"],
+#btn-slide3:checked ~ .site-wrapper label[for="btn-slide3"] {
+  background-color: #ffffff;
 }
 
 .content-wrapper {
@@ -267,22 +390,8 @@ body > input[type="radio"] {
   z-index: 22;
 }
 
-.controls label {
-  position: absolute;
-  top: 3px;
-  left: 30px;
-  font-size: 0;
-  line-height: 13px;
-  font-weight: normal;
-  color: #8FBDEC;
-}
-
 input[type="password"] + label {
   top: 68px;
-}
-
-.controls form input:focus + label {
-  font-size: 11px;
 }
 
 .control {
@@ -312,23 +421,8 @@ input[type="password"] + label {
 
 .search-form input {
   width: 310px;
-  height: 44px;
   margin: 20px 15px;
-  padding-left: 14px;
   font-size: 14px;
-  line-height: 24px;
-  font-weight: normal;
-  box-sizing: border-box;
-  border: 1px solid #D3D3D2;
-  border-radius: 5px;
-}
-
-.search-form input:hover {
-  border: 2px solid #C7C6C5;
-}
-
-.search-form input:focus {
-  border: 2px solid #8FBDEC;
 }
 
 .search {
@@ -392,27 +486,12 @@ input[type="password"] + label {
 
 .entry-form input {
   width: 240px;
-  height: 44px;
   margin: 10px 10px;
-  padding-left: 14px;
   font-size: 14px;
-  line-height: 24px;
-  font-weight: normal;
-  box-sizing: border-box;
-  border: 1px solid #D3D3D2;
-  border-radius: 5px;
-}
-
-.entry-form input:hover {
-  border: 2px solid #C7C6C5;
-}
-
-.entry-form input:focus {
-  border: 2px solid #8FBDEC;
 }
 
 .entry {
-  width: 93px;
+  width: 73px;
   height: 25px;
   padding-left: 20px;
   padding-top: 7px;
@@ -488,8 +567,6 @@ input[type="password"] + label {
 .backet-wrap:hover > .order {
   display: flex;
 }
-
-
 
 .order .style-btn {
   margin-top: auto;
@@ -592,80 +669,6 @@ input[type="password"] + label {
   line-height: 24px;
 }
 
-.slider {
-  position: relative;
-  padding-top: 273px;
-  text-align: center;
-  color: #ffffff;
-}
-
-.slide {
-  display: none;
-}
-
-.slide-title {
-  width: 700px;
-  margin: 0 auto;
-  padding-bottom: 40px;
-  font-size: 60px;
-  line-height: 60px;
-  font-weight: bold;
-}
-
-.slide .style-btn {
-  padding: 12px 45px;
-  font-weight: bold;
-  font-size: 31px;
-  line-height: 42px;
-  text-shadow: 0 2px 5px rgba(153, 51, 0, 0.76);
-}
-
-.slider-controls {
-  display: flex;
-  justify-content: space-between;
-  position: absolute;
-  top: 446px;
-  left: 0;
-  width: 80px;
-  height: 20px;
-  z-index: 20;
-}
-
-.slider-controls label {
-  width: 17px;
-  height: 17px;
-  background-color: transparent;
-  border: 2px solid #ffffff;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-#btn-slide1:checked ~ .site-wrapper #slide1,
-#btn-slide2:checked ~ .site-wrapper #slide2,
-#btn-slide3:checked ~ .site-wrapper #slide3 {
-  display: block;
-}
-
-#btn-slide1:checked ~ .site-wrapper {
-  background: #849d8f url("..//img/slide1.png") no-repeat;
-}
-
-#btn-slide2:checked ~ .site-wrapper {
-  background-color: #8996a6;
-  background-image: url("..//img/slide2.png");
-}
-
-#btn-slide3:checked ~ .site-wrapper {
-  background-color: #9d8b84;
-  background-image: url("..//img/slide3.png");
-}
-
-#btn-slide1:checked ~ .site-wrapper label[for="btn-slide1"],
-#btn-slide2:checked ~ .site-wrapper label[for="btn-slide2"],
-#btn-slide3:checked ~ .site-wrapper label[for="btn-slide3"] {
-  background-color: #ffffff;
-}
-
 .container-banner {
   display: flex;
   justify-content: space-between;
@@ -725,18 +728,6 @@ input[type="password"] + label {
   width: 190px;
 }
 
-.hit-item .style-btn {
-  display: none;
-  width: 200px;
-  height: 34px;
-  margin-top: 10px;
-  margin-left: 34px;
-  padding-top: 10px;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: bold;
-}
-
 .hit-container {
   display: flex;
   justify-content: space-between;
@@ -753,6 +744,7 @@ input[type="password"] + label {
 
 .hit-img img {
   width: 267px;
+  margin: 0 auto;
   border-radius: 50%;
   margin-bottom: 8px;
 }
@@ -816,6 +808,48 @@ input[type="password"] + label {
   color: #FFBC9E;
   border-color: #FFBC9E;
 }
+
+.hit-item .style-btn {
+  display: none;
+  width: 200px;
+  height: 34px;
+  padding-top: 10px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  position: absolute;
+  top: 340px;
+  left: 33px;
+  z-index: 10;
+}
+
+.hit-item:hover .style-btn {
+  display: block;
+}
+
+.hit-item::before {
+  content: "";
+  display: none;
+  position: absolute;
+  top: -6px;
+  left: -13px;
+  width: 293px;
+  min-height: 328px;
+  padding-bottom: 77px;
+  border-radius: 3px;
+  background-color: rgba(255,255,255,0.3);
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, .4);
+  z-index: -1;
+}
+
+.hit-item:hover {
+  z-index: 1;
+}
+
+.hit-item:hover::before {
+  display: block;
+}
+
 
 .technology {
   width: 1106px;
@@ -945,6 +979,7 @@ input[type="password"] + label {
   border: none;
   border-radius: 15px;
   background-color: #F8F7F4;
+  position: relative;
 }
 
 .subscribe-form p {
@@ -955,21 +990,14 @@ input[type="password"] + label {
   font-weight: normal;
 }
 
-.subscribe-form label {
-  font-size: 0;
+.subscribe-form input:focus + label {
+  top: 118px;
 }
 
 .subscribe-form input {
   width: 350px;
-  height: 42px;
-  padding-left: 12px;
   margin-right: 8px;
-  color: #999999;
   font-size: 16px;
-  line-height: 24px;
-  font-weight: normal;
-  border: 1px solid #999999;
-  border-radius: 5px;
 }
 
 .subscribe-form .style-btn {
@@ -1312,6 +1340,7 @@ main h1 {
 }
 
 .fat-value label {
+  color: #fff;
   padding-top: 9px;
   padding-bottom: 10px;
   padding-left: 50px;
@@ -1381,6 +1410,7 @@ input[type="radio"]:checked + label:hover::after {
 }
 
 .filler-value label {
+  color: #fff;
   padding-top: 7px;
   padding-bottom: 10px;
   padding-left: 52px;
