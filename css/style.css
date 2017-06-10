@@ -863,9 +863,10 @@ input[type="password"] + label {
 .price::after {
   content: "/кг";
   display: block;
+  width: 50px;
   position: absolute;
   top: 4px;
-  left: 114px;
+  left: 108px;
   font-size: 28px;
 }
 
@@ -1087,7 +1088,7 @@ input[type="password"] + label {
 }
 
 .subscribe-form input {
-  width: 350px;
+  width: 367px;
   margin-right: 8px;
   font-size: 16px;
 }
@@ -1103,18 +1104,17 @@ input[type="password"] + label {
 
 .feedback {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  height: 430px;
   background-color: #849D8F;
   background-image: url("..//img/map.jpg");
   background-repeat: no-repeat;
+  position: relative;
 }
 
 .contact {
+  position: absolute;
+  top: 60px;
+  right: 27px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1125,14 +1125,12 @@ input[type="password"] + label {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 330px;
-  height: 248px;
+  width: 255px;
+  min-height: 250px;
   padding-top: 30px;
   padding-left: 24px;
+  padding-right: 24px;
   padding-bottom: 30px;
-  margin-top: 61px;
-  margin-right: 27px;
-  margin-bottom: 60px;
   border: none;
   border-radius: 15px;
   background-color: #FFFEFE;
@@ -1165,7 +1163,7 @@ input[type="password"] + label {
 }
 
 .contact .style-btn {
-  width: 230px;
+  width: 250px;
   height: 34px;
   padding-top: 10px;
   font-size: 18px;
@@ -1188,6 +1186,7 @@ input[type="password"] + label {
           align-items: center;
   padding-left: 27px;
   padding-right: 27px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .footer-social {
@@ -1207,7 +1206,7 @@ input[type="password"] + label {
   height: 30px;
   margin-right: 11px;
   opacity: .8;
-  border: 3px solid #C2CEC7;
+  border: 3px solid #fff;
   border-radius: 50%;
   background-image: url("..//img/sprite.png");
   background-repeat: no-repeat;
@@ -1716,8 +1715,4 @@ input[type="checkbox"] + label:hover::before {
 
 .page-current + a {
   margin-left: 10px;
-}
-
-.footer-bottom {
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
