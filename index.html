@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+
     <input id="btn-slide1" type="radio" name="toggle" checked>
     <input id="btn-slide2" type="radio" name="toggle">
     <input id="btn-slide3" type="radio" name="toggle">
 
     <div class="site-wrapper">
       <div class="content-wrapper">
+
         <header class="header-main">
           <div class="logo">
             <img src="img/logo.png" alt="Магазин Глейси">
@@ -195,6 +197,19 @@
           </div>
         </div>
       </footer>
-
+      <div class="feedback-popup">
+        <h2>Мы обязательно вам ответим!</h2>
+        <form class="feedback-form"action="https://echo.htmlacademy.ru" class="feedback-form">
+          <input id="name" type="text" name="name" placeholder="Как вас зовут?" required>
+          <label for="name">Как вас зовут?</label>
+          <input id="fb-email" type="email" name="fb-email" placeholder="Ваша почта для ответа?" required>
+          <label for="fb-email">Ваша почта для ответа?</label>
+          <textarea id="message" name="message" rows="8" cols="50">Напишите что-нибудь...</textarea>
+          <label for="message">Напишите что-нибудь...</label>
+          <button class="style-btn" type="submit" name="button">Отправить</button>
+        </form>
+        <button class="feedback-popup-close" type="button" title="Закрыть">Закрыть</button>
+      </div>
+      <div class="modal-overlay"></div>
     </div>
   </body>
