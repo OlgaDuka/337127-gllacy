@@ -9,7 +9,7 @@ body {
 body, button, input {
   font-family: "Roboto", "Arial", sans-serif;
   color: #000000;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 img {
@@ -20,6 +20,7 @@ img {
   color: #fff;
   text-align: center;
   text-decoration: none;
+  font-weight: 700;
   border: none;
   background-color: #f00;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ff3333), to(#ff6633));
@@ -53,7 +54,7 @@ img {
   padding-left: 13px;
   color: #999999;
   line-height: 24px;
-  font-weight: normal;
+  font-weight: 400;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 1px solid #999999;
@@ -85,7 +86,7 @@ img {
   left: 30px;
   font-size: 0;
   line-height: 13px;
-  font-weight: normal;
+  font-weight: 400;
   color: #8FBDEC;
 }
 
@@ -145,12 +146,11 @@ body > input[type="radio"] {
   padding-bottom: 40px;
   font-size: 60px;
   line-height: 60px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .slide .style-btn {
   padding: 12px 45px;
-  font-weight: bold;
   font-size: 31px;
   line-height: 42px;
   text-shadow: 0 2px 5px rgba(153, 51, 0, 0.76);
@@ -166,7 +166,7 @@ body > input[type="radio"] {
   position: absolute;
   top: 446px;
   left: 0;
-  width: 80px;
+  width: 85px;
   height: 20px;
   z-index: 20;
 }
@@ -363,12 +363,12 @@ body > input[type="radio"] {
   font-family: inherit;
   font-size: 14px;
   color: #333333;
-  font-weight: normal;
+  font-weight: 400;
   border-bottom: none;
 }
 
 .sub-menu .novelty a {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .local-menu {
@@ -379,7 +379,6 @@ body > input[type="radio"] {
   margin-top: 20px;
   margin-bottom: 0;
   color: #ffffff;
-  font-weight: normal;
 }
 
 .local-menu li {
@@ -391,7 +390,7 @@ body > input[type="radio"] {
   margin-right: 6px;
   font-size: 14px;
   line-height: 16px;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 .local-menu a:hover,
@@ -448,6 +447,7 @@ input[type="password"] + label {
   color: #ffffff;
   font-size: 14px;
   line-height: 16px;
+  font-weight: 500;
   text-decoration: none;
   background-color: rgba(255,255,255,.2);
   border: none;
@@ -516,7 +516,7 @@ input[type="password"] + label {
   color: #333333;
   font-size: 13px;
   line-height: 24px;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 .entry-form a:hover,
@@ -530,7 +530,6 @@ input[type="password"] + label {
   bottom: 20px;
   left: 20px;
   padding: 10px 25px;
-  font-weight: bold;
   font-size: 18px;
   line-height: 24px;
 }
@@ -632,7 +631,6 @@ input[type="password"] + label {
   -ms-flex-item-align: end;
       align-self: flex-end;
   padding: 10px 15px;
-  font-weight: bold;
   font-size: 18px;
   line-height: 24px;
 }
@@ -644,7 +642,7 @@ input[type="password"] + label {
   color: #333333;
   font-size: 15px;
   line-height: 18px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .table-order {
@@ -653,7 +651,7 @@ input[type="password"] + label {
   color: #333333;
   font-size: 13px;
   line-height: 16px;
-  font-weight: normal;
+  font-weight: 400;
   text-align: left;
 }
 
@@ -723,7 +721,7 @@ input[type="password"] + label {
       -ms-flex-align: end;
           align-items: flex-end;
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .working {
@@ -784,7 +782,7 @@ input[type="password"] + label {
   margin: 0;
   font-size: 35px;
   line-height: 41px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .banner p {
@@ -800,7 +798,6 @@ input[type="password"] + label {
   height: 44px;
   font-size: 18px;
   line-height: 24px;
-  font-weight: bold;
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
@@ -853,7 +850,7 @@ input[type="password"] + label {
   left: 0;
   font-size: 45px;
   line-height: 45px;
-  font-weight: bold;
+  font-weight: 700;
   color: #ffffff;
 }
 
@@ -902,7 +899,6 @@ input[type="password"] + label {
   padding-top: 10px;
   font-size: 18px;
   line-height: 24px;
-  font-weight: bold;
   position: absolute;
   top: 340px;
   left: 33px;
@@ -954,7 +950,7 @@ input[type="password"] + label {
   color: #333333;
   font-size: 24px;
   line-height: 30px;
-  font-weight: normal;
+  font-weight: 500;
 }
 
 .techno {
@@ -979,7 +975,7 @@ input[type="password"] + label {
   color: #333333;
   font-size: 16px;
   line-height: 22px;
-  font-weight: normal;
+  font-weight: 400;
   position: relative;
 }
 
@@ -1036,13 +1032,13 @@ input[type="password"] + label {
   margin-bottom: 9px;
   font-size: 16px;
   line-height: 22px;
-  font-weight: 400px;
+  font-weight: 500;
 }
 
 .news a {
   font-size: 24px;
   line-height: 30px;
-  font-weight: bold;
+  font-weight: 700;
   color: #333333;
   text-decoration: none;
   border-bottom: 2px solid #333333;
@@ -1089,7 +1085,7 @@ input[type="password"] + label {
   margin-bottom: 25px;
   font-size: 16px;
   line-height: 22px;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 .subscribe-form input:focus + label {
@@ -1108,7 +1104,6 @@ input[type="password"] + label {
   margin-top: 10px;
   font-size: 18px;
   line-height: 24px;
-  font-weight: bold;
 }
 
 .feedback {
@@ -1152,7 +1147,7 @@ input[type="password"] + label {
   font-size: 14px;
   line-height: 20px;
   color: #333333;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 .contact p {
@@ -1164,7 +1159,7 @@ input[type="password"] + label {
   display: block;
   font-size: 18px;
   line-height: 24px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .adress {
@@ -1176,7 +1171,6 @@ input[type="password"] + label {
   height: 34px;
   padding-top: 10px;
   font-size: 18px;
-  font-weight: bold;
 }
 
 .feedback-popup {
@@ -1314,7 +1308,7 @@ input[type="password"] + label {
   color: #333;
   font-size: 24px;
   line-height: 28px;
-  font-weight: 400px;
+  font-weight: 500;
 }
 
 .feedback-form {
@@ -1365,7 +1359,6 @@ input[type="password"] + label {
   width: 140px;
   font-size: 18px;
   line-height: 24px;
-  font-weight: bold;
   -ms-flex-item-align: end;
       align-self: flex-end;
   margin-top: auto;
@@ -1487,14 +1480,14 @@ input[type="password"] + label {
       align-self: flex-start;
   font-size: 13px;
   line-height: 18px;
-  font-weight: normal;
+  font-weight: 400;
   color: #ffffff;
   text-decoration: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .main-link a {
-  font-weight: bold;
+  font-weight: 700;
   position: relative;
 }
 
@@ -1529,7 +1522,7 @@ input[type="password"] + label {
   color: #ffffff;
   font-size: 12px;
   line-height: 18px;
-  font-weight: normal;
+  font-weight: 400;
 }
 
 /* Внутренняя страница - каталог */
@@ -1543,7 +1536,7 @@ main h1 {
   color: #ffffff;
   font-size: 35px;
   line-height: 41px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .choice {
@@ -1560,7 +1553,7 @@ main h1 {
 .choice fieldset {
   margin-left: 0;
   color: #ffffff;
-  font-weight: 400;
+  font-weight: 500;
   border: none;
 }
 
@@ -1593,7 +1586,7 @@ main h1 {
   font-family: inherit;
   font-size: 16px;
   line-height: 18px;
-  font-weight: 400;
+  font-weight: 500;
   text-overflow: "";
   border: none;
   border-radius: 50px;
@@ -1828,7 +1821,7 @@ input[type="checkbox"] + label:hover::before {
   font-family: inherit;
   font-size: 16px;
   line-height: 18px;
-  font-weight: 400;
+  font-weight: 500;
   background-color: #A6B7AE;
   border: 2px solid #ffffff;
   border-radius: 50px;
@@ -1887,7 +1880,7 @@ input[type="checkbox"] + label:hover::before {
   color: #ffffff;
   font-size: 16px;
   line-height: 18px;
-  font-weight: 400;
+  font-weight: 500;
   text-decoration: none;
   text-align: center;
   border: none;
