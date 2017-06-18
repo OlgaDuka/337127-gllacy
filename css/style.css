@@ -288,14 +288,6 @@ body > input[type="radio"] {
   background-color: #D07058;
 }
 
-.current-page .sub-menu li:hover {
-  background-color: #D07058;
-}
-
-.current-page a {
-  border-bottom: none;
-}
-
 .sub-menu-wrap {
   position: absolute;
   top: 32px;
@@ -359,7 +351,7 @@ body > input[type="radio"] {
   background-color: rgba(53,53,53,.2);
 }
 
-.main-menu .sub-menu a {
+.sub-menu a {
   font-family: inherit;
   font-size: 14px;
   color: #333333;
@@ -369,6 +361,27 @@ body > input[type="radio"] {
 
 .sub-menu .novelty a {
   font-weight: 700;
+}
+
+.current-page .sub-menu.(not).current-page li:hover {
+  background-color: #FBDED7;
+}
+
+.current-page .sub-menu.(not).current-page li:active {
+  background-color: #F6B5A5;
+}
+
+.current-page .sub-menu .current-page,
+.current-page .sub-menu .current-page:hover,
+.current-page .sub-menu .current-page a,
+.current-page .sub-menu .current-page:hover a {
+  color: #fff;
+  background-color: #D07058;
+  cursor: default;
+}
+
+.current-page a {
+  border-bottom: none;
 }
 
 .local-menu {
@@ -397,6 +410,11 @@ body > input[type="radio"] {
 .local-menu a:active {
   color: #FFBC9E;
   border-color: #FFBC9E;
+}
+
+.breadcrumbs-current {
+  font-size: 14px;
+  margin-top: 3px;
 }
 
 .controls {
@@ -657,12 +675,17 @@ input[type="password"] + label {
 
 .tr-order {
   height: 60px;
-  position: relative;
+}
+
+.td-close {
+  width: 11px;
+  height: 11px;
+  cursor: pointer;
 }
 
 .td-img {
-  padding-left: 20px;
-  padding-right: 13px;
+  width: 60px;
+  text-align: center;
 }
 
 .td-img img {
@@ -684,28 +707,6 @@ input[type="password"] + label {
 
 .td-cost {
   width: 70px;
-}
-
-.tr-order::before,
-.tr-order::after  {
-  content: "";
-  position: absolute;
-  top: 28px;
-  left: 0;
-  width: 15px;
-  height: 1px;
-  border-top: 1px solid #333333;
-  cursor: pointer;
-}
-
-.tr-order::before {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-.tr-order::after {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
 }
 
 .info {
